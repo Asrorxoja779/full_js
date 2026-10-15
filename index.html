@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__icon">Buddy shop</div>
+        <div class="site-header__btns">
+            <select id="categoryFilter" aria-label="Filter products by category">
+                <option value="all">all</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Watches">Watches</option>
+            </select>
+            <button class="site-header__button">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Cart(13)</span>
+            </button>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <div class="product-cards">
+                <div class="product-card" data-category="Clothing">
+                    <img src="./allbuum/finka_kok.jpg" alt="finka_kok">
+                    <h3>Blue Shirt</h3>
+                    <p>Comfortable cotton shirt.</p>
+                    <div class="product-card__rub">Rs.1200</div>
+                    <div class="product-card__btns">
+                        <button  class="btn-product__black">Add to cart</button>
+                        <button class="btn-product__white">View</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Shoes">
+                    <img src="./allbuum/Sneakers.jpg" alt="sneakers">
+                    <h3>Sneakers</h3>
+                    <p>Stylish sneakers perfect for everyday wear.</p>
+                    <div class="product-card__rub">Rs.2500</div>
+                    <div class="product-card__btns">
+                        <button  class="btn-product__black">Add to cart</button>
+                        <button class="btn-product__white">View</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Accessories">
+                    <img src="/allbuum/LeatherBelt.jpg" alt="LeatherBelt">
+                    <h3>Leather Belt</h3>
+                    <p>Durable leather belt with metal buckle.</p>
+                    <div class="product-card__rub">Rs.800</div>
+                    <div class="product-card__btns">
+                        <button class="btn-product__black">Add to cart</button>
+                        <button class="btn-product__white">View</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Clothing">
+                    <img src="/allbuum/deniis.jpg" alt="deniis">
+                    <h3>Denim Jeans</h3>
+                    <p>Classic denim jeans with slim fit style.</p>
+                    <div class="product-card__rub">Rs.1800</div>
+                    <div class="product-card__btns">
+                        <button class="btn-product__black">Add to cart</button>
+                        <button class="btn-product__white">View</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Accessories">
+                    <img src="/allbuum/kozoynak.jpg" alt="kozoynak">
+                    <h3>Sunglasses</h3>
+                    <p>Trendy sunglasses with UV protection.</p>
+                    <div class="product-card__rub">Rs.900</div>
+                    <div class="product-card__btns">
+                        <button class="btn-product__black">Add to cart</button>
+                        <button class="btn-product__white">View</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Clothing">
+                    <img src="./allbuum/shorts.jpg" alt="shorts">
+                    <h3>Running Shorts</h3>
+                    <p>Lightweight and comfortable running shorts.</p>
+                    <div class="product-card__rub">Rs.700</div>
+                    <div class="product-card__btns">
+                        <button class="btn-product__black">Add to cart</button>
+                        <button class="btn-product__white">View</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Shoes">
+                    <img src="./allbuum/shoes.jpg" alt="shoes">
+                    <h3>Formal Shoes</h3>
+                    <p>Elegant formal shoes for office and events.</p>
+                    <div class="product-card__rub">Rs.3000</div>
+                    <div class="product-card__btns">
+                        <button class="btn-product__black">Add to cart</button>
+                        <button class="btn-product__white">View</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Accessories">
+                    <img src="./allbuum/cap.jpg" alt="cap">
+                    <h3>Cap</h3>
+                    <p>Casual cap for sunny days.</p>
+                    <div class="product-card__rub">Rs.500</div>
+                    <div class="product-card__btns">
+                        <button class="btn-product__black">Add to cart</button>
+                        <button class="btn-product__white">View</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="Watches">
+                    <img src="./allbuum/watch.jpg" alt="watch">
+                    <h3>Wrist Watch</h3>
+                    <p>Premium wrist watch with leather strap.</p>
+                    <div class="product-card__rub">Rs.4500</div>
+                    <div class="product-card__btns">
+                        <button class="btn-product__black">Add to cart</button>
+                        <button class="btn-product__white">View</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./main.js">a</script>
+</body>
+</html>
