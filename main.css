@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     color: #0b1220;
     background: #f8fafc;
@@ -5,8 +11,7 @@ body {
 
 .container {
     max-width: 1100px;
-    margin: 20px auto;
-    padding: 0 16px;
+    margin: 0 auto;
 }
 
 .site-header {
@@ -47,8 +52,12 @@ select {
 }
 
 .product-cards {
+    /* align-items: center; */
+    padding: 20px 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     gap: 18px;
 
 }
@@ -59,6 +68,13 @@ select {
     padding: 12px;
     text-align: center;
     box-shadow:0 6px 18px rgba(2, 6, 23, 0.06);
+}
+
+.product-card:hover {
+    cursor: pointer;
+    transition: 0.6s;
+    transform: scale(1.07);
+    border:rgb(53, 52, 52);
 }
 
 .product-card__rub {
