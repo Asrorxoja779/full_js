@@ -11,7 +11,6 @@ categoryFilter.addEventListener('change', () => {
     });
 });
 
-// 1. SAVAT HISOBLAGICHI
 let cartCount = Number(localStorage.getItem('cartCount')) || 0;
 const cartText = document.getElementById('cartText');
 cartText.textContent = `Cart(${cartCount})`;
@@ -25,13 +24,12 @@ addButtons.forEach(button => {
   });
 });
 
-// 2. KATEGORIYA FILTRI
 const filter = document.getElementById('categoryFilter');
-const cards = document.querySelectorAll('.product-card');
+const cards2 = document.querySelectorAll('.product-card');
 filter.addEventListener('change', () => {
   const value = filter.value;
-  cards.forEach(card => {
-    const show = value === 'all' || card.dataset.category === value;
-    card.style.display = show ? '' : 'none';
+  cards2.forEach(card2 => {
+    const show = value === 'all' || card2.dataset.category === value;
+    card2.style.display = show ? '' : 'none';
   });
 });
